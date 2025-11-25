@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>전체메뉴 - 서울아산병원 건강증진센터</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Desktop Header -->
+    <header
+        class="hidden md:flex fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 h-20 items-center justify-between px-8 shadow-sm transition-all">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                A</div>
+            <span class="font-bold text-xl tracking-tight">서울아산병원 <span
+                    class="text-teal-600 font-normal">건강증진센터</span></span>
+        </div>
+        <nav class="flex gap-8">
+            <a href="index.html" class="font-medium text-gray-600 hover:text-teal-600 transition">홈</a>
+            <a href="program.html" class="font-medium text-gray-600 hover:text-teal-600 transition">프로그램</a>
+            <a href="my_care.html" class="font-medium text-gray-600 hover:text-teal-600 transition">나의 건강</a>
+            <a href="menu.html" class="font-bold text-teal-600">전체메뉴</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button class="text-gray-500 hover:text-gray-900 font-medium text-sm">ENG</button>
+            <button
+                class="bg-teal-600 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-teal-700 transition shadow-md">
+                로그인
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header
+        class="md:hidden fixed top-0 w-full bg-white z-50 px-4 h-14 flex items-center justify-between border-b border-gray-100">
+        <h1 class="text-lg font-bold">전체메뉴</h1>
+        <button class="text-gray-600"><i class="fas fa-times text-xl"></i></button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-14 md:pt-20 pb-24 md:pb-0">
+
+        <div class="max-w-7xl mx-auto md:px-8 md:py-12">
+            <!-- Login/Profile Area -->
+            <div class="bg-white p-6 mb-2 md:mb-8 md:rounded-2xl md:shadow-sm md:border md:border-gray-100">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-1">로그인이 필요합니다</h2>
+                        <p class="text-gray-500 text-sm">더 편리한 서비스를 이용해보세요</p>
+                    </div>
+                    <div
+                        class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 text-2xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="flex gap-2 mt-6 md:max-w-md">
+                    <button
+                        class="flex-1 bg-yellow-400 text-gray-900 py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-yellow-500 transition">
+                        <i class="fas fa-comment"></i> 카카오 로그인
+                    </button>
+                    <button
+                        class="flex-1 border border-gray-300 text-gray-700 py-3 rounded-xl font-bold text-sm hover:bg-gray-50 transition">
+                        이메일 로그인
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu List (Grid on Desktop) -->
+            <div class="space-y-2 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
+
+                <!-- Group 1 -->
+                <div
+                    class="bg-white md:rounded-2xl md:shadow-sm md:border md:border-gray-100 md:overflow-hidden h-full">
+                    <div class="px-5 py-4 border-b border-gray-100 bg-gray-50/50">
+                        <h3 class="text-sm font-bold text-teal-600">센터 안내</h3>
+                    </div>
+                    <div class="divide-y divide-gray-50">
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            센터 소개 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            의료진 소개 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            오시는 길 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Group 2 -->
+                <div
+                    class="bg-white md:rounded-2xl md:shadow-sm md:border md:border-gray-100 md:overflow-hidden h-full">
+                    <div class="px-5 py-4 border-b border-gray-100 bg-gray-50/50">
+                        <h3 class="text-sm font-bold text-teal-600">검진 프로그램</h3>
+                    </div>
+                    <div class="divide-y divide-gray-50">
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            연령별 프로그램 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            질환별 정밀검진 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            기업/단체 검진 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Group 3 -->
+                <div
+                    class="bg-white md:rounded-2xl md:shadow-sm md:border md:border-gray-100 md:overflow-hidden h-full">
+                    <div class="px-5 py-4 border-b border-gray-100 bg-gray-50/50">
+                        <h3 class="text-sm font-bold text-teal-600">고객 지원</h3>
+                    </div>
+                    <div class="divide-y divide-gray-50">
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            공지사항 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            자주 묻는 질문 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                        <a href="#"
+                            class="block px-5 py-4 text-base text-gray-800 hover:bg-gray-50 flex justify-between items-center transition">
+                            전화 상담 예약 <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Links -->
+            <div class="p-6 text-center space-y-4 md:mt-12 md:border-t md:border-gray-100 md:pt-8">
+                <div class="flex justify-center gap-4 text-sm text-gray-500">
+                    <a href="#" class="underline hover:text-gray-800">이용약관</a>
+                    <a href="#" class="font-bold text-gray-800 underline hover:text-teal-600">개인정보처리방침</a>
+                </div>
+                <p class="text-xs text-gray-400">앱 버전 1.0.0</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bottom Navigation (Mobile Only) -->
+    <nav
+        class="md:hidden fixed bottom-0 w-full bg-white border-t border-gray-200 pb-safe pt-2 px-6 flex justify-between items-center z-50 h-[80px]">
+        <a href="index.html" class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-800 w-1/4">
+            <i class="fas fa-home text-2xl"></i>
+            <span class="text-xs font-bold">홈</span>
+        </a>
+        <a href="program.html" class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-800 w-1/4">
+            <i class="fas fa-search text-2xl"></i>
+            <span class="text-xs font-bold">프로그램</span>
+        </a>
+        <a href="my_care.html" class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-800 w-1/4">
+            <i class="fas fa-heartbeat text-2xl"></i>
+            <span class="text-xs font-bold">나의 건강</span>
+        </a>
+        <a href="menu.html" class="flex flex-col items-center gap-1 text-teal-700 w-1/4">
+            <i class="fas fa-bars text-2xl"></i>
+            <span class="text-xs font-bold">전체메뉴</span>
+        </a>
+    </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>서울아산병원 건강증진센터</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            padding-bottom: 80px;
+            /* Space for bottom nav */
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(13, 148, 136, 0.9) 0%, rgba(13, 148, 136, 0.1) 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Desktop Header -->
+    <header
+        class="hidden md:flex fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 h-20 items-center justify-between px-8 shadow-sm transition-all">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                A</div>
+            <span class="font-bold text-xl tracking-tight">서울아산병원 <span
+                    class="text-teal-600 font-normal">건강증진센터</span></span>
+        </div>
+        <nav class="flex gap-8">
+            <a href="program.html" class="font-medium text-gray-600 hover:text-teal-600 transition">검진 프로그램</a>
+            <a href="reservation.html" class="font-medium text-gray-600 hover:text-teal-600 transition">간편 예약</a>
+            <a href="my_care.html" class="font-medium text-gray-600 hover:text-teal-600 transition">내 기록</a>
+            <a href="guide.html" class="font-medium text-gray-600 hover:text-teal-600 transition">이용 가이드</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button class="text-gray-500 hover:text-gray-900 font-medium text-sm">ENG</button>
+            <button
+                class="bg-teal-600 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-teal-700 transition shadow-md">
+                로그인
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header
+        class="md:hidden fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 px-4 h-14 flex items-center justify-between shadow-sm">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">A
+            </div>
+            <span class="font-bold text-lg tracking-tight">건강증진센터</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="text-gray-600"><i class="far fa-bell text-xl"></i></button>
+            <button class="text-gray-600"><i class="far fa-user text-xl"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-14 md:pt-20 pb-24 md:pb-0">
+
+        <!-- Hero Section -->
+        <section class="relative bg-white pb-8 md:pb-16 rounded-b-3xl shadow-sm overflow-hidden">
+            <div class="absolute inset-0 hero-gradient opacity-10 pointer-events-none"></div>
+
+            <div class="px-5 pt-8 md:pt-16 max-w-7xl mx-auto">
+                <div class="md:flex md:items-center md:justify-between md:gap-10">
+                    <div class="md:w-1/2">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm font-bold animate-pulse">
+                                ✨ 스마트 검진 추천
+                            </span>
+                        </div>
+                        <h1 class="text-2xl md:text-5xl font-bold leading-tight mb-6 md:mb-8">
+                            건강한 삶을 위한 첫걸음,<br>
+                            <span class="text-teal-600">나에게 맞는 검진은?</span>
+                        </h1>
+
+                        <!-- Recommendation CTA -->
+                        <div
+                            class="bg-white rounded-2xl p-5 md:p-8 shadow-lg border border-teal-50 relative overflow-hidden group cursor-pointer hover:shadow-xl transition-all max-w-xl">
+                            <div
+                                class="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
+                                <i class="fas fa-notes-medical text-6xl md:text-8xl text-teal-600"></i>
+                            </div>
+                            <div class="relative z-10">
+                                <h3 class="text-lg md:text-2xl font-bold text-gray-900 mb-2">나에게 꼭 맞는 검진 찾기</h3>
+                                <p class="text-sm md:text-lg text-gray-500 mb-6">성별, 연령, 증상을 분석해<br
+                                        class="md:hidden">최적의 프로그램을 추천해드려요.</p>
+                                <button
+                                    class="w-full bg-teal-600 text-white py-4 rounded-xl font-bold text-base md:text-lg flex items-center justify-center gap-2 group-hover:bg-teal-700 transition shadow-md">
+                                    <span>스마트 분석 시작하기</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Hero Image (Hidden on Mobile) -->
+                    <div class="hidden md:block md:w-1/2 relative h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="Medical Team"
+                            class="w-full h-full object-cover rounded-3xl shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions (Secondary Goal) -->
+        <section class="px-4 py-6 md:py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-4 md:grid-cols-4 gap-4 md:gap-8">
+                    <a href="#"
+                        class="flex flex-col items-center gap-2 p-4 bg-white md:bg-transparent rounded-2xl md:rounded-none shadow-sm md:shadow-none hover:bg-gray-50 md:hover:bg-transparent transition group">
+                        <div
+                            class="w-16 h-16 md:w-20 md:h-20 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl md:text-3xl shadow-sm border border-blue-100 group-hover:scale-110 transition">
+                            <i class="far fa-file-alt"></i>
+                        </div>
+                        <span class="text-sm md:text-base font-bold text-gray-800 text-center">문진표</span>
+                    </a>
+                    <a href="#"
+                        class="flex flex-col items-center gap-2 p-4 bg-white md:bg-transparent rounded-2xl md:rounded-none shadow-sm md:shadow-none hover:bg-gray-50 md:hover:bg-transparent transition group">
+                        <div
+                            class="w-16 h-16 md:w-20 md:h-20 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 text-2xl md:text-3xl shadow-sm border border-purple-100 group-hover:scale-110 transition">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span class="text-sm md:text-base font-bold text-gray-800 text-center">결과조회</span>
+                    </a>
+                    <a href="#"
+                        class="flex flex-col items-center gap-2 p-4 bg-white md:bg-transparent rounded-2xl md:rounded-none shadow-sm md:shadow-none hover:bg-gray-50 md:hover:bg-transparent transition group">
+                        <div
+                            class="w-16 h-16 md:w-20 md:h-20 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-600 text-2xl md:text-3xl shadow-sm border border-teal-100 group-hover:scale-110 transition">
+                            <i class="far fa-calendar-check"></i>
+                        </div>
+                        <span class="text-sm md:text-base font-bold text-gray-800 text-center">예약현황</span>
+                    </a>
+                    <a href="#"
+                        class="flex flex-col items-center gap-2 p-4 bg-white md:bg-transparent rounded-2xl md:rounded-none shadow-sm md:shadow-none hover:bg-gray-50 md:hover:bg-transparent transition group">
+                        <div
+                            class="w-16 h-16 md:w-20 md:h-20 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 text-2xl md:text-3xl shadow-sm border border-orange-100 group-hover:scale-110 transition">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span class="text-sm md:text-base font-bold text-gray-800 text-center">센터안내</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Programs (Primary Goal) -->
+        <section class="py-6 md:py-16 border-t border-gray-100 bg-white">
+            <div class="max-w-7xl mx-auto px-5">
+                <div class="mb-6 md:mb-10 flex justify-between items-end">
+                    <div>
+                        <h2 class="text-lg md:text-3xl font-bold text-gray-900">맞춤 추천 프로그램</h2>
+                        <p class="text-sm md:text-lg text-gray-500 mt-1">연령대별 인기 검진을 확인하세요</p>
+                    </div>
+                    <a href="program.html" class="text-teal-600 text-sm md:text-base font-bold hover:underline">전체보기 <i
+                            class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <!-- Responsive Grid/Scroll Container -->
+                <div class="flex overflow-x-auto hide-scrollbar gap-4 pb-4 md:grid md:grid-cols-3 md:overflow-visible">
+                    <!-- Card 1 -->
+                    <div
+                        class="min-w-[280px] bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden relative group hover:shadow-2xl transition duration-300">
+                        <div class="h-32 md:h-48 bg-gray-200 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div
+                                class="absolute top-3 left-3 bg-black/60 backdrop-blur-md text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-md">
+                                BEST
+                            </div>
+                        </div>
+                        <div class="p-4 md:p-6">
+                            <div class="flex gap-1 mb-2">
+                                <span
+                                    class="text-[10px] md:text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded">6070세대</span>
+                                <span
+                                    class="text-[10px] md:text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded">뇌/심혈관</span>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-1 md:text-xl">시니어 특화 정밀 검진</h3>
+                            <p class="text-xs md:text-sm text-gray-500 line-clamp-2 mb-3">중장년층에게 꼭 필요한 뇌졸중, 심혈관 질환 집중 케어
+                            </p>
+                            <button
+                                class="w-full py-2.5 md:py-3 rounded-xl bg-teal-50 text-teal-700 font-bold text-sm md:text-base hover:bg-teal-100 transition">
+                                자세히 보기
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="min-w-[280px] bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden relative group hover:shadow-2xl transition duration-300">
+                        <div class="h-32 md:h-48 bg-gray-200 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-4 md:p-6">
+                            <div class="flex gap-1 mb-2">
+                                <span
+                                    class="text-[10px] md:text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded">직장인</span>
+                                <span
+                                    class="text-[10px] md:text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded">스트레스</span>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-1 md:text-xl">2030 베이직 케어</h3>
+                            <p class="text-xs md:text-sm text-gray-500 line-clamp-2 mb-3">바쁜 현대인을 위한 핵심 검사 위주의 실속형 프로그램
+                            </p>
+                            <button
+                                class="w-full py-2.5 md:py-3 rounded-xl bg-gray-50 text-gray-700 font-bold text-sm md:text-base hover:bg-gray-100 transition">
+                                자세히 보기
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Hidden on Mobile initially, shown in Grid) -->
+                    <div
+                        class="min-w-[280px] bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden relative group hover:shadow-2xl transition duration-300">
+                        <div class="h-32 md:h-48 bg-gray-200 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div
+                                class="absolute top-3 left-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                여성특화</div>
+                        </div>
+                        <div class="p-4 md:p-6">
+                            <div class="flex gap-1 mb-2">
+                                <span
+                                    class="text-[10px] md:text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded">여성</span>
+                                <span
+                                    class="text-[10px] md:text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded">갑상선/유방</span>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-1 md:text-xl">여성 정밀 검진</h3>
+                            <p class="text-xs md:text-sm text-gray-500 line-clamp-2 mb-3">여성에게 빈번한 갑상선, 유방, 자궁 질환 정밀 진단
+                            </p>
+                            <button
+                                class="w-full py-2.5 md:py-3 rounded-xl bg-gray-50 text-gray-700 font-bold text-sm md:text-base hover:bg-gray-100 transition">
+                                자세히 보기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner -->
+        <section class="px-4 py-6 md:py-12">
+            <div
+                class="max-w-7xl mx-auto bg-gray-900 rounded-2xl p-6 md:p-12 text-white relative overflow-hidden flex flex-col md:flex-row md:items-center md:justify-between">
+                <div class="relative z-10 md:w-2/3">
+                    <p class="text-teal-400 text-xs md:text-sm font-bold mb-2">KAKAO LOGIN</p>
+                    <h3 class="text-lg md:text-3xl font-bold mb-3 md:mb-4">복잡한 회원가입 없이<br>1초만에 시작하세요</h3>
+                    <p class="text-gray-400 text-sm md:text-base mb-6 hidden md:block">카카오톡 계정으로 간편하게 로그인하고<br>나의 검진 기록을
+                        안전하게 관리하세요.</p>
+                    <button
+                        class="bg-yellow-400 text-gray-900 px-4 py-3 md:px-8 md:py-4 rounded-xl text-sm md:text-lg font-bold flex items-center gap-2 hover:bg-yellow-500 transition">
+                        <i class="fas fa-comment"></i> 카카오로 시작하기
+                    </button>
+                </div>
+                <div
+                    class="absolute right-[-20px] bottom-[-20px] md:right-10 md:bottom-[-40px] opacity-20 text-9xl md:text-[200px]">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Info -->
+        <section class="bg-gray-100 px-5 py-8 md:py-16 text-xs md:text-sm text-gray-500">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8 mb-6 md:mb-10">
+                    <div class="flex-1 bg-white p-3 md:p-6 rounded-xl shadow-sm flex items-center gap-3 md:gap-6">
+                        <i class="fas fa-trophy text-yellow-500 text-xl md:text-4xl"></i>
+                        <div>
+                            <strong class="block text-gray-900 md:text-lg">Newsweek</strong>
+                            <span>세계 최고 병원 선정</span>
+                        </div>
+                    </div>
+                    <div class="flex-1 bg-white p-3 md:p-6 rounded-xl shadow-sm flex items-center gap-3 md:gap-6">
+                        <i class="fas fa-shield-alt text-teal-600 text-xl md:text-4xl"></i>
+                        <div>
+                            <strong class="block text-gray-900 md:text-lg">Security</strong>
+                            <span>개인정보 안심 보안</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:flex md:justify-between md:items-end border-t border-gray-200 pt-8">
+                    <p class="leading-relaxed">
+                        <strong class="text-gray-900 text-base block mb-2">서울아산병원 건강증진센터</strong>
+                        서울시 송파구 올림픽로 43길 88<br>
+                        대표전화: 1688-7575 | 팩스: 02-3010-0000<br>
+                        사업자등록번호: 123-45-67890
+                    </p>
+                    <p class="mt-4 md:mt-0 opacity-50">© Asan Medical Center. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Navigation (Mobile Only) -->
+    <nav
+        class="md:hidden fixed bottom-0 w-full bg-white border-t border-gray-200 pb-safe pt-2 px-6 flex justify-between items-center z-50 h-[80px]">
+        <a href="program.html" class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-800 w-1/4">
+            <i class="fas fa-search text-2xl"></i>
+            <span class="text-xs font-bold">프로그램</span>
+        </a>
+        <a href="reservation.html" class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-800 w-1/4">
+            <i class="far fa-calendar-check text-2xl"></i>
+            <span class="text-xs font-bold">예약</span>
+        </a>
+        <a href="my_care.html" class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-800 w-1/4">
+            <i class="fas fa-heartbeat text-2xl"></i>
+            <span class="text-xs font-bold">내 기록</span>
+        </a>
+        <a href="guide.html" class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-800 w-1/4">
+            <i class="far fa-question-circle text-2xl"></i>
+            <span class="text-xs font-bold">가이드</span>
+        </a>
+    </nav>
+
+</body>
+
+</html>
