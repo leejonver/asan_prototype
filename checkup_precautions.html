@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>건강검진 유의사항 - 서울아산병원</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold">A
+                    </div>
+                    <span class="font-bold text-lg">서울아산병원 <span class="text-teal-600">건강증진센터</span></span>
+                </a>
+            </div>
+            <a href="reservation.html" class="text-sm font-medium text-gray-500 hover:text-teal-600">
+                <i class="fas fa-calendar-check mr-1"></i> 예약확인
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 py-8 md:py-12">
+
+        <!-- Hero -->
+        <div class="mb-10 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">검진 전 <span class="text-teal-600">필수 체크리스트</span></h1>
+            <p class="text-gray-600">정확한 검사를 위해 아래 사항을 반드시 지켜주세요.</p>
+        </div>
+
+        <!-- Section 1: Must Do (Universal) -->
+        <section class="mb-12">
+            <div class="flex items-center gap-2 mb-6">
+                <span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">MUST</span>
+                <h2 class="text-xl font-bold">모든 수검자 필수 준비</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Questionnaire -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition">
+                    <div
+                        class="w-14 h-14 bg-teal-50 rounded-full flex items-center justify-center text-teal-600 text-2xl mb-4">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">인터넷 문진 작성</h3>
+                    <p class="text-sm text-gray-500 mb-4">정확한 건강상태 파악을 위해<br>내원 전 반드시 완료해주세요.</p>
+                    <a href="#"
+                        class="w-full py-2.5 bg-teal-600 text-white rounded-xl font-bold text-sm hover:bg-teal-700 transition">
+                        문진표 작성하기
+                    </a>
+                </div>
+
+                <!-- Fasting -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-10 h-10 bg-orange-50 rounded-full flex items-center justify-center text-orange-500 text-xl">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">금식 안내</h3>
+                    </div>
+
+                    <div class="space-y-4 relative">
+                        <!-- Timeline Line -->
+                        <div class="absolute left-[19px] top-2 bottom-2 w-0.5 bg-gray-100"></div>
+
+                        <!-- Step 1 -->
+                        <div class="flex gap-4 relative z-10">
+                            <div class="w-10 text-center">
+                                <span
+                                    class="bg-gray-200 text-gray-600 text-[10px] font-bold px-1.5 py-0.5 rounded">D-1</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-sm text-gray-800">오후 6시 가볍게 식사</p>
+                                <p class="text-xs text-gray-500">기름진 음식, 술, 육류 금지</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="flex gap-4 relative z-10">
+                            <div class="w-10 text-center">
+                                <span
+                                    class="bg-red-100 text-red-600 text-[10px] font-bold px-1.5 py-0.5 rounded">이후</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-sm text-red-600">절대 금식 (물 포함)</p>
+                                <p class="text-xs text-gray-500">담배, 껌, 은단도 안돼요!</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex gap-4 relative z-10">
+                            <div class="w-10 text-center">
+                                <span
+                                    class="bg-teal-100 text-teal-600 text-[10px] font-bold px-1.5 py-0.5 rounded">당일</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-sm text-gray-800">물 한 모금도 주의</p>
+                                <p class="text-xs text-gray-500">검사 2시간 전 생수 1컵만 가능</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Conditional (If Applicable) -->
+        <section>
+            <div class="flex items-center gap-2 mb-6">
+                <span class="bg-gray-200 text-gray-600 text-xs font-bold px-2 py-1 rounded">CHECK</span>
+                <h2 class="text-xl font-bold">해당자 유의사항</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Medication -->
+                <div class="bg-white p-5 rounded-2xl border border-gray-200 flex gap-4">
+                    <div
+                        class="shrink-0 w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-500">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-1">항혈전제 복용 중이신가요?</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-2">
+                            아스피린, 와파린 등 복용 시 조직검사 후 출혈 위험이 있습니다.
+                        </p>
+                        <div class="bg-blue-50 text-blue-800 text-xs font-bold px-3 py-2 rounded-lg inline-block">
+                            <i class="fas fa-exclamation-circle mr-1"></i> 1주일 전 담당의와 상담 후 중단 필요
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonoscopy -->
+                <div class="bg-white p-5 rounded-2xl border border-gray-200 flex gap-4">
+                    <div
+                        class="shrink-0 w-10 h-10 bg-purple-50 rounded-full flex items-center justify-center text-purple-500">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-1">대장내시경 예약하셨나요?</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-2">
+                            정확한 검사를 위해 장을 깨끗이 비워야 합니다.
+                        </p>
+                        <ul class="text-xs text-gray-500 space-y-1 list-disc list-inside">
+                            <li><strong class="text-gray-800">3일 전부터 금지:</strong> 씨 있는 과일(수박, 참외), 잡곡, 해조류</li>
+                            <li>별도 안내문에 따라 장정결제 복용 필수</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sputum -->
+                <div class="bg-white p-5 rounded-2xl border border-gray-200 flex gap-4">
+                    <div
+                        class="shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-500">
+                        <i class="fas fa-box-tissue"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-1">객담(가래) 채취 안내</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            아침 기상 직후, 심호흡 후 깊은 기침을 하여 뱉어주세요. (냉장보관 필수)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
